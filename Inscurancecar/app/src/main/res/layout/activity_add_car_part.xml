@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.adiljutt.inscurancecar.AddCarPartActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:padding="10sp"
+            android:background="@drawable/shape"
+            android:id="@+id/search"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="0sp"
+            android:layout_weight="9"
+            android:layout_marginTop="10sp"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+            android:hint="Search Part"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:id="@+id/addssss"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_add_black_24dp"/>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layout"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <FrameLayout
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fl_errorView"
+            android:visibility="gone">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/box"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:text="No Cities Yet"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/retry"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Retry"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_below="@id/text"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fl_recyclerView"
+            android:visibility="visible"
+            android:layout_marginBottom="20sp"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/order_recyclerView"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

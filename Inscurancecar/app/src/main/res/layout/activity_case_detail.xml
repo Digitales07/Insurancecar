@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.adiljutt.inscurancecar.CaseDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="Case Date : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/auto_cuurent_date"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Slect Date"
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:hint="Personal Info."
+            android:padding="5sp"/>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Owner Name : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/owner_name"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Father Name : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/father_name"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="CNIC Number : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/cnic"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:hint="Car Info."
+            android:padding="5sp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="WorkShop Name : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/workshop_name"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Car Number : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/car_number"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Engine Number : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/engine_number"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Chassis Number : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/chasis_numbers"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Sum Insured : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/sum_insureds"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Car Company : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/car_companys"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Premiums : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/premiums"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Models : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/models"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Branchs : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/branchs"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Detuctables : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/detuctables"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" ReInspections : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/reinspections"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Slect Date"
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Remarks : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/remarks"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Previous Amount Details : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/previous_amount_details"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Previous Loses Lodgement Date: "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/previous_losses__lodgement_date"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" Loses Date: "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/custom_lose_dates"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:hint=" Amount Info."
+            android:padding="5sp"/>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Asking Amount : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/asking_amount"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Settle Amount : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/settle_amount"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Tax : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/tax"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:hint=" Insurrance History Info."
+            android:padding="5sp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Insurance Id : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/insurance_id"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Insurance Amount : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/insurance_history_amount"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Insurance Date : "
+                android:padding="5sp"/>
+
+            <TextView
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/custom_date"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:padding="5sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:hint=" Images Info."
+            android:padding="5sp"/>
+
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/shape"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="0dp"
+                android:textSize="15sp"
+                android:id="@+id/before"
+                android:layout_height="wrap_content"
+                android:hint=" Before "
+                android:padding="10sp"/>
+
+            <TextView
+                android:background="@drawable/shape"
+                android:layout_weight="5"
+                android:layout_marginRight="5sp"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/after"
+                android:layout_width="0dp"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint=" After "
+                android:padding="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="3"
+                android:layout_marginTop="20sp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/edit_case"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Edit" />
+
+
+
+            <Button
+                android:layout_weight="3"
+                android:layout_marginTop="20sp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/delete_case"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Delete" />
+
+            <Button
+                android:layout_weight="3"
+                android:layout_marginTop="20sp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/add_case"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Download" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

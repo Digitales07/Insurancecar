@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.adiljutt.inscurancecar.InVoiceReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Select Date"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/ntn"
+            android:textSize="15sp"
+            android:hint="Enter NTN Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="InVoice Info."
+            android:textSize="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/address"
+            android:textSize="15sp"
+            android:hint="Enter Company Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/particulars"
+            android:textSize="15sp"
+            android:hint="Enter Particulars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/policy"
+            android:textSize="15sp"
+            android:hint="Enter Policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/loss"
+            android:textSize="15sp"
+            android:hint="Enter Loss No."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Payments Info."
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10sp"
+            android:text="Professional Fee."
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/pofessional_description"
+            android:textSize="15sp"
+            android:hint="Enter Professional Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/pofessional_fee"
+            android:textSize="15sp"
+            android:hint="Enter Professional Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10sp"
+            android:text="Re-Inspection Fee."
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/reinspection_description"
+            android:textSize="15sp"
+            android:hint="Enter Re-Inspection Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/reinspection_fee"
+            android:textSize="15sp"
+            android:hint="Enter Re-Inspection Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10sp"
+            android:text="Local Conveyance Fee."
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/conveyance_description"
+            android:textSize="15sp"
+            android:hint="Enter Local Conveyance Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/local_conveyance_fee"
+            android:textSize="15sp"
+            android:hint="Enter Local Conveyance Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10sp"
+            android:text="PhotoGraphs Fee."
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/photographs"
+            android:textSize="15sp"
+            android:hint="Enter PhotoGraphs Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/photographs_fee"
+            android:textSize="15sp"
+            android:hint="Enter PhotoGraphs Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10sp"
+            android:text="Grand Total."
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"/>
+
+
+        <EditText
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/grandtotal"
+            android:textSize="15sp"
+            android:hint="Enter Total Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <Button
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/add_case"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Download" />
+
+    </LinearLayout>
+
+</ScrollView>

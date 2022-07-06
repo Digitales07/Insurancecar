@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adiljutt.inscurancecar.CasePartActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        app:cardCornerRadius="5sp">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginStart="10sp"
+                    android:textSize="20sp"
+                    android:text="Part Name"
+                    android:id="@+id/part_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:padding="20sp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:padding="10sp"
+                        android:background="@drawable/shape"
+                        android:layout_marginEnd="10sp"
+                        android:id="@+id/condition"
+                        android:textSize="20sp"
+                        android:hint="Enter Condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <EditText
+                            android:layout_marginTop="5sp"
+                            android:padding="10sp"
+                            android:background="@drawable/shape"
+                            android:layout_marginEnd="10sp"
+                            android:id="@+id/dep"
+                            android:textSize="20sp"
+                            android:hint="Enter Dep."
+                            android:layout_weight="4"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:layout_marginTop="5sp"
+                            android:padding="10sp"
+                            android:background="@drawable/shape"
+                            android:layout_weight="6"
+                            android:layout_marginEnd="10sp"
+                            android:id="@+id/price"
+                            android:textSize="20sp"
+                            android:hint="Enter Price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:weightSum="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginStart="10sp"
+                        android:textSize="20sp"
+                        android:text="Sub Total :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_marginStart="10sp"
+                        android:textSize="20sp"
+                        android:text="0"
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:text="Add"
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

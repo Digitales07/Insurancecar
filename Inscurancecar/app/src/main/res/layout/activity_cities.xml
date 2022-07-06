@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.adiljutt.inscurancecar.CitiesActivity">
+
+    <View
+        android:layout_above="@id/layout"
+        android:id="@+id/kine"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/gray_btn_bg_color"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:weightSum="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/addpart"
+            android:layout_weight="3"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="70sp"
+                android:layout_height="50sp"
+                android:padding="10sp"
+                android:src="@drawable/parts" />
+
+            <TextView
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Add Car Part"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="10sp"/>
+
+    </LinearLayout>
+
+        <View
+            android:layout_weight="0.05"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_btn_bg_color" />
+
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:id="@+id/report"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:padding="10sp"
+                android:src="@drawable/ic_report_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="View Reports"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="10sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.05"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_btn_bg_color" />
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout_customer"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:padding="10sp"
+                android:src="@drawable/ic_exit" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Log0ut"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="10sp"/>
+
+         </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_above="@id/kine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="180sp"
+            android:layout_height="180sp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24.0dip"
+            android:layout_marginTop="30sp"
+            android:src="@drawable/logosssss" />
+
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Select City"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/fl_errorView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/box"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="No Cities Yet"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/retry"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Retry"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/order_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
